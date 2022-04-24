@@ -1,0 +1,63 @@
+ html, body { 
+    padding: 0%; 
+    margin: 0%; 
+    height: 100%; 
+    width: 100%;
+} 
+
+.navmenu{ 
+    width: 100%; 
+    height: fit-content;
+    display: flex;
+    background-color: #dddddd; 
+    position: fixed; 
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 30px;
+    -webkit-box-shadow: 2px 11px 33px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 11px 33px -5px rgba(0,0,0,0.75);
+    box-shadow: 2px 11px 33px -5px rgba(0, 0, 0, 0.186);
+} 
+
+.mainlogoframe{ 
+    background: url(./assets/Immagine\ 2022-04-24\ 164620.png); 
+    width: 200px; 
+    height: 132px; 
+    background-size: cover; 
+    background-position: center center; 
+    margin: 0 100px;
+} 
+
+.menu{ 
+    display: flex; 
+    margin: 0 100px;
+}
+
+.navlink{ 
+    background-color: rgba(224, 224, 224, 0); 
+    color: rgb(46, 46, 46);
+    text-decoration: none; 
+    text-align: center; 
+    padding: 15px 20px; 
+    font-size: small;
+} 
+
+.socials{ 
+ display: flex;
+} 
+
+.linkimg{ 
+    width: 15px; 
+    height: 15px; 
+    text-decoration: none;
+    border: 0; 
+    margin: 0 10px;
+} 
+
+.container{ 
+    padding: 0%; 
+    margin: 0%; 
+    height: 100%; 
+    width: 100%; 
+    background-color: rgb(35, 113, 164);
+}
