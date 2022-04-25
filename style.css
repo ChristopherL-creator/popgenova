@@ -1,8 +1,11 @@
- html, body { 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+html, body { 
     padding: 0%; 
     margin: 0%; 
     height: 100%; 
-    width: 100%;
+    width: 100%; 
+    font-family: 'roboto', sans-serif; 
 } 
 
 .navmenu{ 
@@ -12,38 +15,40 @@
     background-color: #dddddd; 
     position: fixed; 
     flex-wrap: wrap; 
-    align-items: center;
-    padding: 30px;
+    align-items: center; 
+    justify-content: center;
+    padding: 30px 5%; 
+    flex-wrap: wrap;
     -webkit-box-shadow: 2px 11px 33px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 11px 33px -5px rgba(0,0,0,0.75);
     box-shadow: 2px 11px 33px -5px rgba(0, 0, 0, 0.186);
 } 
 
-.mainlogoframe{ 
+.headerlogo{ 
     background: url(./assets/Immagine\ 2022-04-24\ 164620.png); 
     width: 200px; 
     height: 132px; 
     background-size: cover; 
     background-position: center center; 
-    margin: 0 100px;
 } 
 
 .menu{ 
     display: flex; 
-    margin: 0 100px;
-}
+    margin: 5% 10%; }
 
 .navlink{ 
-    background-color: rgba(224, 224, 224, 0); 
     color: rgb(46, 46, 46);
     text-decoration: none; 
     text-align: center; 
     padding: 15px 20px; 
-    font-size: small;
+    font-size: x-small; 
 } 
 
 .socials{ 
- display: flex;
+    display: flex; 
+    justify-content: center; 
+    margin: 10px; 
+    
 } 
 
 .linkimg{ 
@@ -51,7 +56,7 @@
     height: 15px; 
     text-decoration: none;
     border: 0; 
-    margin: 0 10px;
+    margin: 0 15px;
 } 
 
 .container{ 
@@ -59,5 +64,89 @@
     margin: 0%; 
     height: 100%; 
     width: 100%; 
-    background-color: rgb(35, 113, 164);
+} 
+
+.autentica{ 
+
+} 
+
+.footercontainer{ 
+    background-color: rgb(30, 30, 30); 
+    justify-content: center; 
+    width: 100%; 
+    height: 75vh;  
+    display: flex;
 }
+
+.footer{ 
+    /* padding-left: 10%; 
+    padding-right: 10%; */
+    width: 80%; 
+    height: 75vh;  
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-areas: " . . . . " 
+                         " footerlogo indirizzo contatti socialmedia " 
+                         " footerlogo indirizzo contatti socialmedia " 
+                         " . . . . " 
+                         " end end end end" 
+                         " . . . . "; 
+    column-gap: 5px; 
+    row-gap: 5px;
+} 
+
+.footerlogo{ 
+    /* background-color: rgb(178, 59, 178);  */
+    grid-area: footerlogo; 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    padding: 0% 15%;
+} 
+
+.indirizzo{ 
+    /* background-color: rgb(81, 59, 178);  */
+    grid-area: indirizzo; 
+    color: rgb(218, 218, 218); 
+    place-self: center;
+} 
+
+.contatti{ 
+    background-color: rgb(59, 178, 89); 
+    grid-area: contatti;
+} 
+
+.socialmedia{ 
+    background-color: rgb(178, 176, 59); 
+    grid-area: socialmedia;
+} 
+
+.end{ 
+    background-color: rgb(178, 59, 178); 
+    grid-area: end;
+} 
+
+@media screen and (max-width: 480px) { 
+
+    .navmenu{ 
+        padding: 10px 5%; 
+        justify-content: center; 
+    } 
+
+    .mainlogoframe{ 
+        margin: 10px 35px;
+    } 
+
+    .menu{ 
+        margin: 10px 65px;
+    } 
+
+    .navlink{ 
+        padding: 15px 20px;
+    } 
+
+    .socials{ 
+        margin: 10px;
+    }
+} 
